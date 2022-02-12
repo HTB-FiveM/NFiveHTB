@@ -81,9 +81,9 @@
 
 		public static string _pn(string context, string text, string pluralText, long n, params object[] args) => Catalog.GetParticularPluralString(context, text, pluralText, n, args);
 
-		public virtual Task Loaded() => Task.CompletedTask; // Task.FromResult(0);
+		public virtual Task Loaded() => Task.CompletedTask;
 
-		public virtual Task Started() => Task.CompletedTask; // Task.FromResult(0);
+		public virtual Task Started() => Task.CompletedTask;
 
 		/// <summary>
 		/// Reloads this controllers configuration.

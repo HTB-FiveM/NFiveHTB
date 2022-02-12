@@ -17,6 +17,7 @@
     using System.Linq;
     using NGettext.Loaders;
     using System.Threading.Tasks;
+    using NFiveHtb.SDK.Client.Locales;
 
     [PublicAPI]
 	public abstract class Service
@@ -94,11 +95,11 @@
 
 		public string _pn(string context, string text, string pluralText, long n, params object[] args) => this.Catalog.GetParticularPluralString(context, text, pluralText, n, args);
 
-		public virtual Task Loaded() => Task.FromResult(0);
+		public virtual Task Loaded() => Task.CompletedTask;
 
-		public virtual Task Started() => Task.FromResult(0);
+		public virtual Task Started() => Task.CompletedTask;
 
-		public virtual Task HoldFocus() => Task.FromResult(0);
+		public virtual Task HoldFocus() => Task.CompletedTask;
 
 		protected async Task Delay(int ms)
 		{

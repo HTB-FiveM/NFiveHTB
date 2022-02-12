@@ -1,4 +1,4 @@
-namespace htb_rp.Client
+namespace NFiveHtb.Client
 {
     using System;
     using System.Collections.Generic;

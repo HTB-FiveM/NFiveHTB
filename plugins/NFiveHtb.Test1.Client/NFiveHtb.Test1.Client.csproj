@@ -4,4 +4,7 @@
     <RootNamespace>NFiveHtb.Test1.Client.Plugin</RootNamespace>
     <AssemblyName>NFiveHtb.Test1.Client.net</AssemblyName>
     </PropertyGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\SDK\NFiveHtb.SDK.Client\NFiveHtb.SDK.Client.csproj" />
+    </ItemGroup>
 </Project>

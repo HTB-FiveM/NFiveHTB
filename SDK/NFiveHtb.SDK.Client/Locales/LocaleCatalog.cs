@@ -1,4 +1,4 @@
-﻿namespace NFiveHtb.SDK.Client
+﻿namespace NFiveHtb.SDK.Client.Locales
 {
 	using NFiveHtb.SDK.Core.Locales;
 	using NGettext;
