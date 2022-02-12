@@ -19,7 +19,7 @@
     using System.Threading.Tasks;
     using NFiveHtb.SDK.Client.Locales;
 
-    [PublicAPI]
+    
 	public abstract class Service
 	{
 		public static EventHandlerDictionary EventHandlers;

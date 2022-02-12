@@ -5,7 +5,7 @@
     using System;
     using System.ComponentModel.DataAnnotations;
 
-    [PublicAPI]
+    
 	public class BootHistory
 	{
 		[Key]

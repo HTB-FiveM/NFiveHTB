@@ -14,7 +14,7 @@
     using System.Text;
     using System.Threading.Tasks;
 
-    [PublicAPI]
+    
     public abstract class Controller
 	{
 		protected static ILocaleCatalog Catalog;

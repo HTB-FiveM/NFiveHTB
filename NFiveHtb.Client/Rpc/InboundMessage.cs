@@ -4,7 +4,7 @@
 	using System.Collections.Generic;
 	using JetBrains.Annotations;
 
-	[PublicAPI]
+	
 	public class InboundMessage
 	{
 		public Guid Id { get; set; }

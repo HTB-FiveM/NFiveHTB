@@ -3,13 +3,11 @@
     using JetBrains.Annotations;
     using Newtonsoft.Json;
     using System;
-    using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
 
     /// <summary>
     /// Session model representing a user's connection to the server.
     /// </summary>
-    [PublicAPI]
+    
 	public class Session
 	{
 		/// <summary>
@@ -18,8 +16,6 @@
 		/// <value>
 		/// The session identifier.
 		/// </value>
-		[Key]
-		[Required]
 		public Guid Id { get; set; }
 
 		/// <summary>
@@ -28,8 +24,7 @@
 		/// <value>
 		/// The IP address of the connected client.
 		/// </value>
-		[Required]
-		[StringLength(47, MinimumLength = 5)] // [::1] through [0000:0000:0000:0000:0000:0000:000.000.000.000]
+		/// // [::1] through [0000:0000:0000:0000:0000:0000:000.000.000.000]
 		public string IpAddress { get; set; }
 
 		/// <summary>
@@ -38,7 +33,6 @@
 		/// <value>
 		/// The timestamp of when the session was created.
 		/// </value>
-		[Required]
 		public DateTime Created { get; set; } = DateTime.UtcNow;
 
 		/// <summary>
@@ -63,7 +57,6 @@
 		/// <value>
 		/// The reason the client disconnected.
 		/// </value>
-		[StringLength(200)]
 		public string DisconnectReason { get; set; }
 
 		/// <summary>
@@ -72,7 +65,6 @@
 		/// <value>
 		/// The handle of the connected client.
 		/// </value>
-		[NotMapped]
 		public int Handle { get; set; }
 
 		/// <summary>
@@ -81,8 +73,6 @@
 		/// <value>
 		/// The user identifier.
 		/// </value>
-		[Required]
-		[ForeignKey("User")]
 		public Guid UserId { get; set; }
 
 		/// <summary>

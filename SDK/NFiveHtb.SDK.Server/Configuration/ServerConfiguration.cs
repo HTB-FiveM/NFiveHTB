@@ -4,7 +4,7 @@
     using NFiveHtb.SDK.Core.Diagnostics;
     using JetBrains.Annotations;
 
-    [PublicAPI]
+    
 	public static class ServerConfiguration
 	{
 		/// <summary>

@@ -3,7 +3,7 @@
 	using JetBrains.Annotations;
     using NFiveHtb.SDK.Server.Events;
 
-    [PublicAPI]
+    
 	public class ConnectionDeferrals : IConnectionDeferrals
 	{
 		private readonly dynamic deferrals;

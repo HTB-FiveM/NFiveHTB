@@ -3,7 +3,7 @@
     using JetBrains.Annotations;
     using System;
 
-	[PublicAPI]
+	
 	[Serializable]
 	public class Repository
 	{

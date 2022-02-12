@@ -7,7 +7,7 @@
 	using NFiveHtb.SDK.Client.Interface;
 	using NFiveHtb.SDK.Core.Utilities;
 
-	[PublicAPI]
+	
 	public class NuiManager : INuiManager
 	{
 		private readonly EventHandlerDictionary events;

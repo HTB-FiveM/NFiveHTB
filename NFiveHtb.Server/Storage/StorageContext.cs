@@ -8,9 +8,9 @@
     using Microsoft.EntityFrameworkCore;
     using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
     using System;
+    using NFiveHtb.Server.Storage.Configurations;
 
-    [PublicAPI]
-	public class StorageContext : EFContext<StorageContext>
+    public class StorageContext : EFContext<StorageContext>
 	{
         public StorageContext() : base(
 			new DbContextOptionsBuilder<StorageContext>()
@@ -30,9 +30,13 @@
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
-			base.OnModelCreating(modelBuilder);
+			modelBuilder.ApplyConfiguration(new UserConfiguration());
+			modelBuilder.ApplyConfiguration(new SessionConfiguration());
+			modelBuilder.ApplyConfiguration(new BootHistoryConfiguration());
 
-			modelBuilder.Entity<User>().HasIndex(u => u.License).IsUnique();
+			modelBuilder.Entity<Session>().Ignore(c => c.Handle);
+
+			base.OnModelCreating(modelBuilder);			
 		}
 	}
 }

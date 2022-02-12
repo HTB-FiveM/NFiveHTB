@@ -3,7 +3,7 @@
     using NFiveHtb.SDK.Core.Models.Player;
     using JetBrains.Annotations;
 
-	[PublicAPI]
+	
 	public interface ICommunicationMessage
 	{
 		/// <summary>

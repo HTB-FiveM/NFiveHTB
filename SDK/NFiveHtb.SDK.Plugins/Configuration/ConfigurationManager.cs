@@ -6,7 +6,7 @@
     using System;
     using System.IO;
 
-	[PublicAPI]
+	
 	public static class ConfigurationManager
 	{
 		/// <summary>

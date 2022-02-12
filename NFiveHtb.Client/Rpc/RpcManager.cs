@@ -12,7 +12,7 @@
 	using System.Linq;
     using NFiveHtb.Client.Communications;
 
-    [PublicAPI]
+    
 	public static class RpcManager
 	{
 		private static readonly Logger Logger = new Logger("RPC");

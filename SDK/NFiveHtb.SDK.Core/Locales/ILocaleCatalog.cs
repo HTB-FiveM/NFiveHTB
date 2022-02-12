@@ -3,7 +3,7 @@
     using JetBrains.Annotations;
     using System.Globalization;
 
-	[PublicAPI]
+	
 	public interface ILocaleCatalog
 	{
 		/// <summary>Gets the catalog culture.</summary>

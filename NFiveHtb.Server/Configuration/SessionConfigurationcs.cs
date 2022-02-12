@@ -6,7 +6,7 @@
     using System;
     using YamlDotNet.Serialization;
 
-    [PublicAPI]
+    
 	public class SessionConfiguration : ControllerConfiguration
 	{
 		public override string FileName => "session";

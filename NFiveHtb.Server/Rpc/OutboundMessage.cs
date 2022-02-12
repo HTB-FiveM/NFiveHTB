@@ -6,7 +6,7 @@
     using System;
 	using System.Collections.Generic;
 
-	[PublicAPI]
+	
 	public class OutboundMessage
 	{
 		public Guid Id { get; set; }

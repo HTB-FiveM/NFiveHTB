@@ -5,7 +5,7 @@
 	/// <summary>
 	/// Client SDK constants.
 	/// </summary>
-	[PublicAPI]
+	
 	public static class SDK
 	{
 		/// <summary>

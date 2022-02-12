@@ -9,7 +9,7 @@
 	using System.Linq;
     using NFiveHtb.SDK.Client.Communications;
 
-    [PublicAPI]
+    
 	public class EventManager
 	{
 		private readonly Logger logger;

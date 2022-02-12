@@ -5,7 +5,7 @@
     using System;
 
 	[Serializable]
-	[PublicAPI]
+	
 	public class Name
 	{
 		/// <summary>

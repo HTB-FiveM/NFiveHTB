@@ -5,7 +5,7 @@
 	/// <summary>
 	/// Core NFive server events which are sent over the server event manager.
 	/// </summary>
-	[PublicAPI]
+	
 	public static class ServerEvents
 	{
 		/// <summary>

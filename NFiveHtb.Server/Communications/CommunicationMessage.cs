@@ -11,7 +11,7 @@
     using System.Linq;
     using NFiveHtb.Server.Diagnostics;
 
-    [PublicAPI]
+    
 	public class CommunicationMessage : ICommunicationMessage
 	{
 		private readonly EventManager eventManager;

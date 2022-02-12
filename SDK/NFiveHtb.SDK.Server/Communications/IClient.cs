@@ -1,7 +1,7 @@
 ﻿namespace NFiveHtb.SDK.Server.Communications
 {
 	using JetBrains.Annotations;
-	[PublicAPI]
+	
 	public interface IClient
 	{
 		/// <summary>

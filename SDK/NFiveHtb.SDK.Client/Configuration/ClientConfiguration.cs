@@ -4,7 +4,7 @@
     using NFiveHtb.SDK.Core.Configuration;
     using NFiveHtb.SDK.Core.Diagnostics;
 
-    [PublicAPI]
+    
 	public static class ClientConfiguration
 	{
 		public static LocaleConfiguration Locale { get; set; } = new LocaleConfiguration();
@@ -12,7 +12,7 @@
 		public static LogConfiguration Log { get; set; } = new LogConfiguration();
 	}
 
-	[PublicAPI]
+	
 	public class LogConfiguration
 	{
 		public LogLevel ConsoleLogLevel { get; set; } = LogLevel.Warn;

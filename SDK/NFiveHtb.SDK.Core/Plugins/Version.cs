@@ -4,7 +4,7 @@
     using System;
 
 	[Serializable]
-	[PublicAPI]
+	
 	public class Version
 	{
 		/// <summary>

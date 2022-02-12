@@ -8,19 +8,19 @@
     </PropertyGroup>
   
     <ItemGroup>
-      <PackageReference Include="Autofac" Version="6.3.0" />
-      <PackageReference Include="DotNetZip" Version="1.16.0" />
-      <PackageReference Include="JetBrains.Annotations" Version="2021.3.0" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.22" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.22" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.22">
+        <PackageReference Include="Autofac" Version="6.3.0" />
+        <PackageReference Include="DotNetZip" Version="1.16.0" />
+        <PackageReference Include="JetBrains.Annotations" Version="2021.3.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.22" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.22" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.22">
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      </PackageReference>
-      <PackageReference Include="TimeZoneConverter" Version="5.0.0" />
-      <PackageReference Include="X4D.Diagnostics.ConsoleTraceListener" Version="0.1.0.20" />
-  
-      <Compile Include="../Shared/**/*.cs" />
+        </PackageReference>
+        <PackageReference Include="TimeZoneConverter" Version="5.0.0" />
+        <PackageReference Include="X4D.Diagnostics.ConsoleTraceListener" Version="0.1.0.20" />
+        <PackageReference Include="YamlDotNet" Version="11.2.1" />
+        <Compile Include="../Shared/**/*.cs" />
     </ItemGroup>
   
     <ItemGroup>

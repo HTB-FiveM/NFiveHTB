@@ -3,7 +3,7 @@
     using JetBrains.Annotations;
     using System;
 
-	[PublicAPI]
+	
 	public interface ICommunicationReceive
 	{
 		/// <summary>

@@ -4,7 +4,7 @@
     using NFiveHtb.SDK.Client.Interface;
     using System;
 
-	[PublicAPI]
+	
 	public class OverlayManager : IOverlayManager
 	{
 		private readonly INuiManager nui;

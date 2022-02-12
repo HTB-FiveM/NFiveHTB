@@ -7,7 +7,7 @@
     using System.IO;
     using System.Text;
 
-	[PublicAPI]
+	
 	public static class RpcPacker
 	{
 		private static readonly JsonSerializer Serializer = new JsonSerializer

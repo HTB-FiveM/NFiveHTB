@@ -20,14 +20,16 @@
 
         public override Task Loaded()
         {
-            Logger.Debug("Client plugin Test1Service LOADED");
+            Logger.Info("Client plugin Test1Service LOADED");
+            Console.WriteLine("Snootch");
 
             return Task.CompletedTask;
         }
 
         public override Task Started()
         {
-            Logger.Debug("Client plugin Test1Service STARTED");
+            Logger.Info("Client plugin Test1Service STARTED");
+            Console.WriteLine("To the nootch");
 
             return Task.CompletedTask;
         }

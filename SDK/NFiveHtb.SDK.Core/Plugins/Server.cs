@@ -3,7 +3,7 @@
 	using System;
 	using System.Collections.Generic;
 
-	//g[PublicAPI]
+	//g
 	[Serializable]
 	public class Server
 	{

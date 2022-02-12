@@ -3,7 +3,7 @@
 	using JetBrains.Annotations;
     using NFiveHtb.SDK.Core.Models;
 
-    [PublicAPI]
+    
 	public interface IExplosionEvent
 	{
 		int OwnerNetId { get; }

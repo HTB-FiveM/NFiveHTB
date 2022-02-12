@@ -6,7 +6,7 @@
     using System;
     using System.Threading.Tasks;
 
-    [PublicAPI]
+    
 	public class CommunicationTransmitClient : ICommunicationTransmitClient
 	{
 		private readonly string @event;

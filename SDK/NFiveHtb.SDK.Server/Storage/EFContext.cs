@@ -12,7 +12,7 @@
 	/// Represents a MySQL Entity Framework database context.
 	/// </summary>
 	/// <typeparam name="TContext">The type of the database context.</typeparam>
-	[PublicAPI]
+	
 	//[DbConfigurationType(typeof(MySqlEFConfiguration))]
 	public abstract class EFContext<TContext> : DbContext where TContext : DbContext
 	{

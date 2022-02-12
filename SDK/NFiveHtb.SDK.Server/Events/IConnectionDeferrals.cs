@@ -2,7 +2,7 @@
 {
 	using JetBrains.Annotations;
 
-	[PublicAPI]
+	
 	public interface IConnectionDeferrals
 	{
 		string Message { set; }

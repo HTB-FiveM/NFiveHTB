@@ -8,7 +8,7 @@
     using System.Globalization;
     using TimeZoneConverter;
 
-    [PublicAPI]
+    
     public class CoreConfiguration : ControllerConfiguration
 	{
 		public override string FileName => "core";
@@ -26,7 +26,7 @@
 
 		public LogConfiguration Log { get; set; } = new LogConfiguration();
 
-		[PublicAPI]
+		
 		public class DisplayConfiguration
 		{
 			public string Name { get; set; } = "NFive";
@@ -36,7 +36,7 @@
 			public string Map { get; set; } = "Los Santos";
 		}
 
-		[PublicAPI]
+		
 		public class LogConfiguration
 		{
 			public LogOutputConfiguration Output { get; set; } = new LogOutputConfiguration();
@@ -51,7 +51,7 @@
 			};
 		}
 
-		[PublicAPI]
+		
 		public class LogOutputConfiguration
 		{
 			public LogLevel ClientConsole { get; set; } = LogLevel.Warn;

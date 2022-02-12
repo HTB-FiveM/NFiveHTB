@@ -4,7 +4,7 @@
     using System;
     //using System.Security.Cryptography;
 
-    [PublicAPI]
+    
 	public static class GuidGenerator
 	{
 		/// <summary>

@@ -3,7 +3,7 @@
 	using NFiveHtb.SDK.Core;
 	using JetBrains.Annotations;
 
-	[PublicAPI]
+	
 	public class ServerPluginAttribute : PluginAttribute
 	{
 		/// <inheritdoc />

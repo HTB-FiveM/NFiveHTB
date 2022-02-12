@@ -1,15 +1,13 @@
 ﻿namespace NFiveHtb.SDK.Core.Models
 {
 	using System;
-	using System.ComponentModel.DataAnnotations;
     using NFiveHtb.SDK.Core.Helpers;
-    using JetBrains.Annotations;
 
 	/// <inheritdoc />
 	/// <summary>
 	/// Represents the key properties for a stored model.
 	/// </summary>
-	[PublicAPI]
+	
 	public abstract class IdentityModel : IIdentityModel
 	{
 		/// <inheritdoc />
@@ -19,8 +17,6 @@
 		/// <value>
 		/// The model identifier.
 		/// </value>
-		[Key]
-		[Required]
 		public Guid Id { get; set; }
 
 		/// <inheritdoc />
@@ -30,7 +26,6 @@
 		/// <value>
 		/// The timestamp of when the model was created.
 		/// </value>
-		[Required]
 		public DateTime Created { get; set; }
 
 		/// <inheritdoc />

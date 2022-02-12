@@ -8,7 +8,7 @@ namespace NFiveHtb.SDK.Client
     /// <summary>
     /// Specifies the client SDK version number the assembly was built against.
     /// </summary>
-    [PublicAPI]
+    
 	public class ClientPluginAttribute : PluginAttribute
 	{
 		/// <inheritdoc />

@@ -2,7 +2,7 @@
 {
 	using JetBrains.Annotations;
 
-	[PublicAPI]
+	
 	public interface ICommunicationMessage
 	{
 		/// <summary>

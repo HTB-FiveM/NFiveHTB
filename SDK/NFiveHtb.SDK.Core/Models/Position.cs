@@ -1,14 +1,11 @@
 ﻿namespace NFiveHtb.SDK.Core.Models
 {
 	using JetBrains.Annotations;
-	using System.ComponentModel.DataAnnotations;
-	using System.ComponentModel.DataAnnotations.Schema;
 
 	/// <summary>
 	/// Represents a position in 3D space.
 	/// </summary>
-	[PublicAPI]
-	[ComplexType]
+
 	public class Position
 	{
 		/// <summary>
@@ -17,7 +14,6 @@
 		/// <value>
 		/// The position on the X axis.
 		/// </value>
-		[Required]
 		public float X { get; set; }
 
 		/// <summary>
@@ -26,7 +22,6 @@
 		/// <value>
 		/// The position on the Y axis.
 		/// </value>
-		[Required]
 		public float Y { get; set; }
 
 		/// <summary>
@@ -35,7 +30,6 @@
 		/// <value>
 		/// The position on the Z axis.
 		/// </value>
-		[Required]
 		public float Z { get; set; }
 
 		/// <summary>

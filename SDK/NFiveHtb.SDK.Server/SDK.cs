@@ -2,7 +2,7 @@
 
 namespace NFiveHtb.SDK.Server
 {
-	[PublicAPI]
+	
 	public static class SDK
 	{
 		/// <summary>

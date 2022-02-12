@@ -6,7 +6,7 @@
 	using System.Collections.Generic;
     using System.IO;
 
-	[PublicAPI]
+	
 	public class Plugin : SDK.Core.Plugins.Plugin
 	{
 		/// <summary>

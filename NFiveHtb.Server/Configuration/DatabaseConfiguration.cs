@@ -4,7 +4,7 @@
     using NFiveHtb.SDK.Core.Controllers;
     using JetBrains.Annotations;
 
-	[PublicAPI]
+	
 	public class DatabaseConfiguration : ControllerConfiguration
 	{
 		public override string FileName => "database";
@@ -15,7 +15,7 @@
 
 		public DatabaseBootHistoryConfiguration BootHistory { get; set; } = new DatabaseBootHistoryConfiguration();
 
-		[PublicAPI]
+		
 		public class DatabaseConnectionConfiguration
 		{
 			public string Host { get; set; } = "localhost";
@@ -36,13 +36,13 @@
 			public override string ToString() => $"Host={this.Host};Port={this.Port};Database={this.Database};User Id={this.User};Password={this.Password};CharSet={this.Charset};SSL Mode=None;AllowPublicKeyRetrieval=true";
 		}
 
-		[PublicAPI]
+		
 		public class DatabaseMigrationsConfiguration
 		{
 			public bool Automatic { get; set; } = true; // TODO - Read from the database.yml setting
 		}
 
-		[PublicAPI]
+		
 		public class DatabaseBootHistoryConfiguration
 		{
 			private TimeSpan updateFrequency = TimeSpan.FromSeconds(15); // TODO - Read from the database.yml setting

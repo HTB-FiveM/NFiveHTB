@@ -5,7 +5,7 @@
 	using NFiveHtb.Client.Events;
 	using NFiveHtb.SDK.Client.Communications;
 
-	[PublicAPI]
+	
 	public class CommunicationReceiveClient : ICommunicationReceiveClient
 	{
 		public string Event { get; }

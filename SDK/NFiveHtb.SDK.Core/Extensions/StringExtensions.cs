@@ -5,7 +5,7 @@
     using System.Linq;
     using System.Text.RegularExpressions;
 
-    [PublicAPI]
+    
 	public static class StringExtensions
 	{
 		public static string Pluralize(this string str, int value, string extension = "s", CultureInfo culture = null)

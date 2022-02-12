@@ -5,7 +5,7 @@
     using System;
 	using System.Collections.Generic;
 
-	[PublicAPI]
+	
 	public interface IClientList
 	{
 		/// <summary>

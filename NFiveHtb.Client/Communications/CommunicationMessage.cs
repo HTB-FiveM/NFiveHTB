@@ -6,7 +6,7 @@
     using NFiveHtb.SDK.Client.Communications;
     using System;
 
-    [PublicAPI]
+    
 	public class CommunicationMessage : ICommunicationMessage
 	{
 		private readonly EventManager eventManager;

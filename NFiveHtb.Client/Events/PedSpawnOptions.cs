@@ -4,7 +4,7 @@
 	using CitizenFX.Core.Native;
 	using JetBrains.Annotations;
 
-	[PublicAPI]
+	
 	public class PedSpawnOptions // TODO: Move to SDK
 	{
 		private readonly dynamic setters;

@@ -4,7 +4,7 @@
     using System;
     using System.Collections.Generic;
 
-    [PublicAPI]
+    
     [Serializable]
 	public class Plugin
 	{

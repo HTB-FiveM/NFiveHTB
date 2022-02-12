@@ -22,6 +22,9 @@ del dist\Server\*.deps.json
 del dist\Client\*.pdb
 del dist\Client\*.deps.json
 
+copy Deps\Newtonsoft.Json.* dist\Client\
+copy Deps\Newtonsoft.Json.* dist\Server\
+
 mkdir dist\plugins\NFive\NFiveHtb.Test1
 copy /y plugins\NFiveHtb.Test1.Client\bin\Release\net471\NFiveHtb.Test1.Client.net.dll dist\plugins\NFive\NFiveHtb.Test1\NFiveHtb.Test1.Client.net.dll
 copy /y plugins\NFiveHtb.Test1.Server\bin\Release\netstandard2.0\NFiveHtb.Test1.Server.net.dll dist\plugins\NFive\NFiveHtb.Test1\NFiveHtb.Test1.Server.net.dll

@@ -4,7 +4,7 @@
     using NFiveHtb.SDK.Server.Communications;
     using System;
 
-	[PublicAPI]
+	
 	public class ClientEventArgs : EventArgs
 	{
 		/// <summary>

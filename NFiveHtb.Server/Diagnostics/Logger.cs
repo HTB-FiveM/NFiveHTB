@@ -9,7 +9,7 @@ namespace NFiveHtb.Server.Diagnostics
     using System.Linq;
 
 
-    [PublicAPI]
+    
     public class Logger : ILogger
 	{
 		public LogLevel Level { get; }

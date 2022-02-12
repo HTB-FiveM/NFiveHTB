@@ -5,7 +5,7 @@
 	/// <summary>
 	/// Core NFive events.
 	/// </summary>
-	[PublicAPI]
+	
 	public static class CoreEvents
 	{
 		/// <summary>

@@ -4,7 +4,7 @@
 	using System.Threading.Tasks;
 	using JetBrains.Annotations;
 
-	[PublicAPI]
+	
 	public interface ICommunicationTransmit
 	{
 		/// <summary>

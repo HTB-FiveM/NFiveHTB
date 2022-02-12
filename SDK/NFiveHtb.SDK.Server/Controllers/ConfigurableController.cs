@@ -4,7 +4,7 @@
 	using NFiveHtb.SDK.Core.Diagnostics;
     using JetBrains.Annotations;
 
-    [PublicAPI]
+    
 	public abstract class ConfigurableController<T> : Controller where T : IControllerConfiguration
 	{
 		/// <summary>

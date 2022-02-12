@@ -2,7 +2,7 @@
 {
 	using JetBrains.Annotations;
 
-	[PublicAPI]
+	
 	public static class FiveMServerEvents
 	{
 		public const string HostingSession = "hostingSession";

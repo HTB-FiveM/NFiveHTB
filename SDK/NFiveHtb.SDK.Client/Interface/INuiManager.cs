@@ -3,7 +3,7 @@
 	using System;
 	using JetBrains.Annotations;
 
-	[PublicAPI]
+	
 	public interface INuiManager
 	{
 		void Focus(bool hasFocus, bool showCursor);

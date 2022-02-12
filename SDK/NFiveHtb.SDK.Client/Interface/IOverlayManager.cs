@@ -3,7 +3,7 @@
 	using System;
 	using JetBrains.Annotations;
 
-	[PublicAPI]
+	
 	public interface IOverlayManager
 	{
 		string Plugin { get; }

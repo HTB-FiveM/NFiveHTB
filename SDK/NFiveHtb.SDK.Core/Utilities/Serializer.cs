@@ -6,7 +6,7 @@
 	/// <summary>
 	/// Utilities to convert objects to and from JSON strings.
 	/// </summary>
-	[PublicAPI]
+	
 	public class Serializer
 	{
 		/// <summary>Gets or sets the formatting option for the serializer.</summary>

@@ -4,7 +4,7 @@
     using System;
     using System.Threading.Tasks;
 
-    [PublicAPI]
+    
 	public interface ITickManager
 	{
 		void On(Action callback);

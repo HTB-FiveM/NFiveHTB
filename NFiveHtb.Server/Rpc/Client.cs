@@ -7,7 +7,7 @@
 	using System.Collections.Generic;
     using System.Globalization;
 
-    [PublicAPI]
+    
 	public class Client : IClient
 	{
 		public int Handle { get; }

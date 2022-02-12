@@ -6,7 +6,7 @@
     using NFiveHtb.SDK.Core.Plugins;
     using NFiveHtb.SDK.Server.Controllers;
 
-    [PublicAPI]
+    
 	public interface IRconManager
 	{
 		void Register(string command, Action callback);

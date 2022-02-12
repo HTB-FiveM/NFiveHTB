@@ -8,7 +8,7 @@
     using System;
     using System.Collections.Generic;
 
-    [PublicAPI]
+    
 	public class ClientList : IClientList
 	{
 		private readonly ILogger logger;

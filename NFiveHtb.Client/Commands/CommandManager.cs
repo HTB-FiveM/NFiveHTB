@@ -8,7 +8,7 @@
 	using NFiveHtb.SDK.Core.Events;
     using NFiveHtb.SDK.Client.Communications;
 
-    [PublicAPI]
+    
 	public class CommandManager : ICommandManager
 	{
 		private readonly Dictionary<string, Action<IEnumerable<string>>> subscriptions = new Dictionary<string, Action<IEnumerable<string>>>();

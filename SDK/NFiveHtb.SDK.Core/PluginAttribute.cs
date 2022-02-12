@@ -3,7 +3,7 @@
     using JetBrains.Annotations;
     using System;
 
-	[PublicAPI]
+	
 	[AttributeUsage(AttributeTargets.Assembly)]
 	public class PluginAttribute : Attribute
 	{

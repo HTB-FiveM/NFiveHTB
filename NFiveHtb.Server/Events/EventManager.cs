@@ -11,7 +11,7 @@
     using System.Threading.Tasks;
     using Newtonsoft.Json;
 
-    [PublicAPI]
+    
 	public class EventManager
 	{
 		private readonly Logger logger;

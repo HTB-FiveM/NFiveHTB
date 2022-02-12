@@ -14,7 +14,7 @@
     using NFiveHtb.Server.Diagnostics;
     using JetBrains.Annotations;
 
-    [PublicAPI]
+    
     public static class RpcManager
 	{
 		private static readonly Serializer Serializer = new Serializer();
