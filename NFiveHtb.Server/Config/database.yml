@@ -1,0 +1,16 @@
+# MySQL database connection
+connection:
+  host: localhost
+  port: 3306
+  database: nfive-dev
+  user: root
+  password: <password>
+  charset: utf8mb4
+  logging: false
+
+migrations:
+  automatic: true
+
+# How often the server uptime log is updated
+boot_history:
+  update_frequency: 60 secs # Minimum is 10 seconds

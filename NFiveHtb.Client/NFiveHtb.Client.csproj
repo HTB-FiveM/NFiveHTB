@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+		<TargetFramework>net471</TargetFramework>
+		<RootNamespace>NFiveHtb.Client</RootNamespace>
+		<TargetName>$(AssemblyName).net</TargetName>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="../Shared/**/*.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="DotNetZip" Version="1.16.0" />
+      <PackageReference Include="JetBrains.Annotations" Version="2021.3.0" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\SDK\NFiveHtb.SDK.Client\NFiveHtb.SDK.Client.csproj" />
+      <ProjectReference Include="..\SDK\NFiveHtb.SDK.Core\NFiveHtb.SDK.Core.csproj" />
+    </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>NFiveHtb.Test1.Server.Plugin</RootNamespace>
+    <AssemblyName>NFiveHtb.Test1.Server.net</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\NFiveHtb.Server\NFiveHtb.Server.csproj" />
+    <ProjectReference Include="..\..\SDK\NFiveHtb.SDK.Server\NFiveHtb.SDK.Server.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+		<TargetFramework>net471</TargetFramework>
+    <RootNamespace>NFiveHtb.Test1.Client.Plugin</RootNamespace>
+    <AssemblyName>NFiveHtb.Test1.Client.net</AssemblyName>
+    </PropertyGroup>
+</Project>
