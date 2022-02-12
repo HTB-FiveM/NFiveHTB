@@ -125,6 +125,7 @@ namespace NFiveHtb.Client
 				}
 			}
 
+			this.logger.Trace($"Services located: {this.services.Count}");			
 			this.logger.Info("Plugins loaded");
 
 			await Task.WhenAll(this.services.Select(s => s.Started()));

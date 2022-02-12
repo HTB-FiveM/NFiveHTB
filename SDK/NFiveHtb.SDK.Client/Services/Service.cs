@@ -95,11 +95,11 @@
 
 		public string _pn(string context, string text, string pluralText, long n, params object[] args) => this.Catalog.GetParticularPluralString(context, text, pluralText, n, args);
 
-		public virtual Task Loaded() => Task.CompletedTask;
+		public virtual Task Loaded() => Task.FromResult(0);
 
-		public virtual Task Started() => Task.CompletedTask;
+		public virtual Task Started() => Task.FromResult(0);
 
-		public virtual Task HoldFocus() => Task.CompletedTask;
+		public virtual Task HoldFocus() => Task.FromResult(0);
 
 		protected async Task Delay(int ms)
 		{

@@ -23,7 +23,7 @@
             Logger.Info("Client plugin Test1Service LOADED");
             Console.WriteLine("Snootch");
 
-            return Task.CompletedTask;
+            return Task.FromResult(0);
         }
 
         public override Task Started()
@@ -31,7 +31,7 @@
             Logger.Info("Client plugin Test1Service STARTED");
             Console.WriteLine("To the nootch");
 
-            return Task.CompletedTask;
+            return Task.FromResult(0);
         }
 
 

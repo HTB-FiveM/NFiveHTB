@@ -13,7 +13,10 @@ server_scripts {
 
 client_scripts {
 	-- NFiveHtb
-	'Client/NFiveHtb.Client.net.dll'
+	'Client/NFiveHtb.Client.net.dll',
+
+	-- Plugins
+	'plugins/**/*.Client.net.dll'
 
 }
 
