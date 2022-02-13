@@ -16,6 +16,7 @@ client_scripts {
 	'Client/NFiveHtb.Client.net.dll',
 
 	-- Plugins
+	'plugins/**/*.Shared.net.dll',
 	'plugins/**/*.Client.net.dll'
 
 }

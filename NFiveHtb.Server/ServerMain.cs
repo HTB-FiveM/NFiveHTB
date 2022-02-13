@@ -180,12 +180,15 @@ namespace NFiveHtb.Server
                 logger.Info($"Loading {plugin.FullName}");
 
                 // Load include files
+                Assembly asmInc = null;
                 foreach (var includeName in plugin.Server?.Include ?? new List<string>())
                 {
+                    logger.Trace($"** Include found: {includeName}");
                     var includeFile = Path.Combine("plugins", plugin.Name.Vendor, plugin.Name.Project, $"{includeName}.net.dll");
                     if (!File.Exists(includeFile)) throw new FileNotFoundException(includeFile);
 
                     AppDomain.CurrentDomain.Load(File.ReadAllBytes(includeFile));
+                    asmInc = AppDomain.CurrentDomain.GetAssemblies().FirstOrDefault(a => a.FullName.Contains($"{includeName}.net"));
                 }
 
                 // Load all the plugin dlls
@@ -212,13 +215,30 @@ namespace NFiveHtb.Server
                         throw new Exception($"Unable to load outdated SDK plugin: '{mainName}'");
                     }
 
-                    // Register the ConfigurationConfig class for the controller
-                    var types = asm.GetTypes().Where(t => !t.IsAbstract && t.IsClass).ToList();
-                    var cfgTypes = types.Where(t => t.IsSubclassOf(typeof(ControllerConfiguration))).ToList();
+                    // Register the ControllerConfiguration class for the controller
+                    var types = asm.GetTypes()
+                        //.Where(t => !t.IsAbstract && t.IsClass)
+                        .ToList();
+                    if(asmInc != null) types.AddRange(asmInc.GetTypes());
 
-                    foreach(var cfgType in cfgTypes)
+                    //var cfgTypes = types.Where(t => t.IsSubclassOf(typeof(ControllerConfiguration))).ToList();
+                    //foreach(var a in AppDomain.CurrentDomain.GetAssemblies())
+                    //{
+                    //    logger.Trace($"+++ {a.GetName().FullName}");
+                    //}
+                    foreach (var a in types)
                     {
-                        logger.Debug(cfgType.FullName);
+                        logger.Trace($"+++ {a.FullName}");
+                    }
+
+                    var configInterface = typeof(IControllerConfiguration);
+                    var cfgTypes = types.Where(t => configInterface.IsAssignableFrom(t)).ToList();
+
+                    logger.Trace($"** Determining configuration types. cfgTypes.Count: {cfgTypes.Count}");
+
+                    foreach (var cfgType in cfgTypes)
+                    {
+                        logger.Debug("====================== " + cfgType.FullName);
 
                         var cfg = (ControllerConfiguration)Activator.CreateInstance(cfgType);
 
