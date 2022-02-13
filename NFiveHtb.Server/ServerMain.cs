@@ -133,7 +133,7 @@ namespace NFiveHtb.Server
             var controllerInstances = container.Resolve<IEnumerable<Controller>>();
             foreach (var controller in controllerInstances)
             {
-                logger.Debug($"Controller Instance Created - {controller.Name}");
+                logger.Trace($"Controller Instance Created - {controller.Name}");
                 _controllers.Add(controller.Name, new List<Controller> { controller });
                 await controller.Loaded();
             }
@@ -183,7 +183,6 @@ namespace NFiveHtb.Server
                 Assembly asmInc = null;
                 foreach (var includeName in plugin.Server?.Include ?? new List<string>())
                 {
-                    logger.Trace($"** Include found: {includeName}");
                     var includeFile = Path.Combine("plugins", plugin.Name.Vendor, plugin.Name.Project, $"{includeName}.net.dll");
                     if (!File.Exists(includeFile)) throw new FileNotFoundException(includeFile);
 
@@ -217,29 +216,18 @@ namespace NFiveHtb.Server
 
                     // Register the ControllerConfiguration class for the controller
                     var types = asm.GetTypes()
-                        //.Where(t => !t.IsAbstract && t.IsClass)
+                        .Where(t => !t.IsAbstract && t.IsClass)
                         .ToList();
-                    if(asmInc != null) types.AddRange(asmInc.GetTypes());
-
-                    //var cfgTypes = types.Where(t => t.IsSubclassOf(typeof(ControllerConfiguration))).ToList();
-                    //foreach(var a in AppDomain.CurrentDomain.GetAssemblies())
-                    //{
-                    //    logger.Trace($"+++ {a.GetName().FullName}");
-                    //}
-                    foreach (var a in types)
-                    {
-                        logger.Trace($"+++ {a.FullName}");
-                    }
+                    if(asmInc != null)
+                        types.AddRange(asmInc.GetTypes()
+                            .Where(t => !t.IsAbstract && t.IsClass)
+                            .ToList());
 
                     var configInterface = typeof(IControllerConfiguration);
                     var cfgTypes = types.Where(t => configInterface.IsAssignableFrom(t)).ToList();
 
-                    logger.Trace($"** Determining configuration types. cfgTypes.Count: {cfgTypes.Count}");
-
                     foreach (var cfgType in cfgTypes)
                     {
-                        logger.Debug("====================== " + cfgType.FullName);
-
                         var cfg = (ControllerConfiguration)Activator.CreateInstance(cfgType);
 
                         // Get the actual subclass type for registration
