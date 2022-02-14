@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+		<TargetFramework>net471</TargetFramework>
+    <AssemblyName>StreetPosition.Shared.net</AssemblyName>
+    </PropertyGroup>
+    <ItemGroup>
+	  <ProjectReference Include="..\..\..\SDK\NFive.SDK.Core\NFive.SDK.Core.csproj" />
+    </ItemGroup>
+</Project>

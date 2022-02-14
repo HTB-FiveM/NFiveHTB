@@ -1,0 +1,49 @@
+﻿html, body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	overflow: hidden;
+	user-select: none;
+	outline: none;
+	background-color: transparent;
+	color: #ffffff;
+	font-family: 'PT Sans', sans-serif;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+main {
+	position: absolute;
+	bottom: 1vh;
+	left: 17.7vw;
+	display: flex;
+}
+
+#left-section {
+	font-size: 2.1rem;
+	margin-right: 0.5vw;
+}
+
+#right-section {
+	margin-top: 0.65vh;
+	width: 50vw;
+}
+
+#top-row {
+	font-size: 0.9rem;
+}
+
+#street {
+	color: #76AEC7;
+}
+
+#crossing {
+	color: #E6D081;
+}
+
+#bottom-row {
+	font-size: 0.6rem;
+}
+
+#area {
+	color: #E6D081;
+}

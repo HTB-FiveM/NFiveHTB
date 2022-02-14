@@ -1,0 +1,31 @@
+﻿plugins:
+- name: NFive/NFive.Test1
+  version: 1.0.0
+  description: Test Server Script for NFiveHtb clone framework
+  author: NFiveHtb
+  license: LGPL-3.0-or-later
+  website: https://NFive.io/
+  server:
+    main:
+    - NFive.Test1.Server
+  client:
+    main:
+    - NFive.Test1.Client
+- name: egertaia/street-position
+  version: 1.2.1
+  description: Customizable HUD element to display current street location, area and direction.
+  author: egertaia
+  license: LGPL
+  server:
+    main:
+    - StreetPosition.Server
+    include:
+    - StreetPosition.Shared
+  client:
+    main:
+    - StreetPosition.Client
+    include:
+    - StreetPosition.Shared
+    files:
+    - Overlays/StreetPositionOverlay.html
+    - Overlays/style.css

@@ -2,7 +2,7 @@
 
 NFiveHTB project is a re-work by Harry The Bastard of the NFive.io plugin system for FiveM
 
-To edit it, open `NFiveHtb.sln` in Visual Studio.
+To edit it, open `NFive.sln` in Visual Studio.
 
 To build it, run `build.cmd`.
 To add as a FiveM resource, run the following commands to make a symbolic link in your server data directory:
@@ -22,5 +22,5 @@ Need to install dotnet sdk tooling:
 dotnet tool install --global dotnet-ef
 
 Add migrations with:
-dotnet ef migrations --verbose --project .\Server\NFiveHtb.Server.csproj --startup-project .\Migrations\Migrations.csproj add <Migration Name>
+dotnet ef migrations --verbose --project .\Server\NFive.Server.csproj --startup-project .\Migrations\Migrations.csproj add <Migration Name>
 

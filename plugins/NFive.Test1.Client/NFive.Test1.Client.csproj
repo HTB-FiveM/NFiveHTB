@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+		<TargetFramework>net471</TargetFramework>
+    <RootNamespace>NFive.Test1.Client.Plugin</RootNamespace>
+    <AssemblyName>NFive.Test1.Client.net</AssemblyName>
+    </PropertyGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\SDK\NFive.SDK.Client\NFive.SDK.Client.csproj" />
+    </ItemGroup>
+</Project>

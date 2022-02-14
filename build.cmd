@@ -11,10 +11,10 @@ rmdir /s /q dist
 mkdir dist
 
 copy /y fxmanifest.lua dist
-xcopy /y /e NFiveHtb.Client\bin\Release\net471\publish dist\Client\
-xcopy /y /e NFiveHtb.Server\bin\Release\netstandard2.0\publish dist\Server\
-xcopy /y /e NFiveHtb.Server\Config dist\config\
-copy /y NFiveHtb.Server\nfive.lock dist\nfive.lock
+xcopy /y /e NFive.Client\bin\Release\net471\publish dist\Client\
+xcopy /y /e NFive.Server\bin\Release\netstandard2.0\publish dist\Server\
+xcopy /y /e NFive.Server\Config dist\config\
+copy /y NFive.Server\nfive.lock dist\nfive.lock
 
 del dist\Server\*.pdb
 del dist\Server\*.deps.json
@@ -25,9 +25,9 @@ del dist\Client\*.deps.json
 copy Deps\Newtonsoft.Json.* dist\Client\
 copy Deps\Newtonsoft.Json.* dist\Server\
 
-mkdir dist\plugins\NFive\NFiveHtb.Test1
-copy /y plugins\NFiveHtb.Test1.Client\bin\Release\net471\NFiveHtb.Test1.Client.net.dll dist\plugins\NFive\NFiveHtb.Test1\NFiveHtb.Test1.Client.net.dll
-copy /y plugins\NFiveHtb.Test1.Server\bin\Release\netstandard2.0\NFiveHtb.Test1.Server.net.dll dist\plugins\NFive\NFiveHtb.Test1\NFiveHtb.Test1.Server.net.dll
+mkdir dist\plugins\NFive\NFive.Test1
+copy /y plugins\NFive.Test1.Client\bin\Release\net471\NFive.Test1.Client.net.dll dist\plugins\NFive\NFive.Test1\NFive.Test1.Client.net.dll
+copy /y plugins\NFive.Test1.Server\bin\Release\netstandard2.0\NFive.Test1.Server.net.dll dist\plugins\NFive\NFive.Test1\NFive.Test1.Server.net.dll
 
 xcopy /y /e dist\* G:\FiveM-Dev\HTB-RP\server-data\resources\NFiveHtb
 

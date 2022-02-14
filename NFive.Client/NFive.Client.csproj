@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+		<TargetFramework>net471</TargetFramework>
+		<RootNamespace>NFive.Client</RootNamespace>
+		<TargetName>$(AssemblyName).net</TargetName>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="../Shared/**/*.cs" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="DotNetZip" Version="1.16.0" />
+		<PackageReference Include="JetBrains.Annotations" Version="2021.3.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="12.0.2" ExcludeAssets="Compile" GeneratePathProperty="true" />
+		<Reference Include="Newtonsoft.Json">
+			<HintPath>$(PkgNewtonsoft_Json)\lib\portable-net40+sl5+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
+		</Reference>
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\SDK\NFive.SDK.Client\NFive.SDK.Client.csproj" />
+      <ProjectReference Include="..\SDK\NFive.SDK.Core\NFive.SDK.Core.csproj" />
+    </ItemGroup>
+</Project>

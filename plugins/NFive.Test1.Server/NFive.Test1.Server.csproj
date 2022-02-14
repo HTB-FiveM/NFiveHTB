@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>NFive.Test1.Server.Plugin</RootNamespace>
+    <AssemblyName>NFive.Test1.Server.net</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\NFive.Server\NFive.Server.csproj" />
+    <ProjectReference Include="..\..\SDK\NFive.SDK.Server\NFive.SDK.Server.csproj" />
+  </ItemGroup>
+
+</Project>

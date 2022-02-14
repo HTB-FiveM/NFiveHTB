@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>StreetPosition.Server.net</AssemblyName>
+    </PropertyGroup>
+    <ItemGroup>
+	  <ProjectReference Include="..\..\..\SDK\NFive.SDK.Core\NFive.SDK.Core.csproj" />
+	  <ProjectReference Include="..\..\..\SDK\NFive.SDK.Server\NFive.SDK.Server.csproj" />
+	  <ProjectReference Include="..\StreetPosition.Shared\StreetPosition.Shared.csproj" />
+    </ItemGroup>
+</Project>

@@ -7,13 +7,13 @@ description 'Harry The Bastard\'s reworked version of the NFive plugin framework
 
 server_scripts {
 	-- NFiveHtb
-	'Server/NFiveHtb.Server.net.dll'
+	'Server/NFive.Server.net.dll'
 
 }
 
 client_scripts {
 	-- NFiveHtb
-	'Client/NFiveHtb.Client.net.dll',
+	'Client/NFive.Client.net.dll',
 
 	-- Plugins
 	'plugins/**/*.Shared.net.dll',
@@ -25,9 +25,9 @@ files {
 	'Client/DotNetZip.dll',
 	'Client/JetBrains.Annotations.dll',
 	'Client/Newtonsoft.Json.dll',
-	--'Client/NFiveHtb.SDK.Plugins.dll',
-	'Client/NFiveHtb.SDK.Client.dll',
-	'Client/NFiveHtb.SDK.Core.dll',
+	--'Client/NFive.SDK.Plugins.dll',
+	'Client/NFive.SDK.Client.dll',
+	'Client/NFive.SDK.Core.dll',
 	'Client/NGettext.dll'
 
 

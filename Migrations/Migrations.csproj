@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NFiveHtb.Server\NFiveHtb.Server.csproj" />
+    <ProjectReference Include="..\NFive.Server\NFive.Server.csproj" />
   </ItemGroup>
 
 </Project>
