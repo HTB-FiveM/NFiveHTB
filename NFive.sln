@@ -33,6 +33,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		build.cmd = build.cmd
 		fxmanifest.lua = fxmanifest.lua
+		index.html = index.html
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
@@ -43,11 +44,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NFive.IntegrationTests", "T
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StreetPosition", "StreetPosition", "{9557E439-166A-468E-A1F1-B7399DBBD719}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreetPosition.Client", "plugins\StreetPosition\StreetPosition.Client\StreetPosition.Client.csproj", "{B110999B-749D-4F10-BDF6-7662D23B6498}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreetPosition.Client", "plugins\StreetPosition\StreetPosition.Client\StreetPosition.Client.csproj", "{B110999B-749D-4F10-BDF6-7662D23B6498}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreetPosition.Server", "plugins\StreetPosition\StreetPosition.Server\StreetPosition.Server.csproj", "{56156901-008A-48A1-86F6-A05D6B6E1160}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreetPosition.Server", "plugins\StreetPosition\StreetPosition.Server\StreetPosition.Server.csproj", "{56156901-008A-48A1-86F6-A05D6B6E1160}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreetPosition.Shared", "plugins\StreetPosition\StreetPosition.Shared\StreetPosition.Shared.csproj", "{346E058D-BD77-4074-98B8-78F6E40FC0B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreetPosition.Shared", "plugins\StreetPosition\StreetPosition.Shared\StreetPosition.Shared.csproj", "{346E058D-BD77-4074-98B8-78F6E40FC0B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

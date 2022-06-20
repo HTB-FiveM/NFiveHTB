@@ -139,21 +139,21 @@ namespace StreetPosition.Client
 
 			if (this.config.When.InVehicle && this.config.When.OnFoot)
 			{
-				this.overlay.Show();
+				this.overlay.Show(false);
 				this.overlay.Visible = true;
 				return;
 			}
 
 			if (inVehicle && this.config.When.InVehicle)
 			{
-				this.overlay.Show();
+				this.overlay.Show(false);
 				this.overlay.Visible = true;
 				return;
 			}
 
 			if (!inVehicle && this.config.When.OnFoot)
 			{
-				this.overlay.Show();
+				this.overlay.Show(false);
 				this.overlay.Visible = true;
 			}
 

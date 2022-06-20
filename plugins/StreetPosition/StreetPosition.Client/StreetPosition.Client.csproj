@@ -8,4 +8,12 @@
 	  <ProjectReference Include="..\..\..\SDK\NFive.SDK.Core\NFive.SDK.Core.csproj" />
 	  <ProjectReference Include="..\StreetPosition.Shared\StreetPosition.Shared.csproj" />
     </ItemGroup>
+    <ItemGroup>
+      <None Update="Overlays\StreetPositionOverlay.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Overlays\style.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
 </Project>

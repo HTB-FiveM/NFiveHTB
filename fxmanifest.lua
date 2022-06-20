@@ -28,8 +28,14 @@ files {
 	--'Client/NFive.SDK.Plugins.dll',
 	'Client/NFive.SDK.Client.dll',
 	'Client/NFive.SDK.Core.dll',
-	'Client/NGettext.dll'
+	'Client/NGettext.dll',
+	'index.html',
 
+
+	-- egertaia/street-position@1.2.1
+	'plugins/egertaia/street-position/Overlays/StreetPositionOverlay.html',
+	'plugins/egertaia/street-position/Overlays/style.css',
 
 }
-
+-- NFive
+ui_page 'index.html'

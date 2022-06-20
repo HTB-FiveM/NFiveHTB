@@ -32,7 +32,7 @@ namespace NFive.Client
 
 		/// <summary>
 		/// Primary client entry point.
-		/// Initializes a new instance of the <see cref="Program" /> class.
+		/// Initializes a new instance of the <see cref="ClientMain" /> class.
 		/// </summary>
 		public ClientMain()
 		{

@@ -25,7 +25,7 @@
 
 		public void Emit(object data)
 		{
-			new Logger().Trace($"Emit ================ {new Serializer().Serialize(data)}");
+			//new Logger().Trace($"Emit ================ {new Serializer().Serialize(data)}");
 			API.SendNuiMessage(new Serializer().Serialize(data));
 		}
 
